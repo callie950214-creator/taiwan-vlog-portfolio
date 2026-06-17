@@ -1,1 +1,91 @@
-c:\Users\lephu\Pictures\大三\taiwan-vlog-portfolio\index.html
+{
+  "profile": {
+    "name": "Phuong Le",
+    "instagram": "phuongle439",
+    "email": "phuongle.tw@gmail.com",
+    "location": "Taipei, Taiwan | Đài Bắc, Đài Loan",
+    "university": "National Taiwan University | Đại học Quốc gia Đài Loan",
+    "major": "International Business & Content Marketing | Kinh doanh Quốc tế & Tiếp thị Nội dung",
+    "bio": "Hi there! I am a Vietnamese international student documenting my daily rhythm of study, creative work, and content creation in Taiwan. Let's connect! | Xin chào! Mình là du học sinh Việt Nam chia sẻ về cuộc sống học tập, công việc và sáng tạo nội dung tại Đài Loan. Kết nối với mình nhé!",
+    "avatar": "images/profile.jpg",
+    "target_role": "Marketing Specialist & Content Creator | Chuyên viên Marketing & Sáng tạo nội dung",
+    "adminPasscode": "1234"
+  },
+  "skills": [
+    { "name": "Content Strategy & Copywriting | Chiến lược Nội dung & Viết lách", "level": "Advanced" },
+    { "name": "Video Editing (Premiere, CapCut) | Dựng video (Premiere, CapCut)", "level": "Advanced" },
+    { "name": "Bilingual Communication (English, Vietnamese) | Giao tiếp Song ngữ (Anh, Việt)", "level": "Fluent" },
+    { "name": "Mandarin Chinese (TOCFL Band B) | Tiếng Trung (TOCFL Band B)", "level": "Conversational" },
+    { "name": "Social Media Management | Quản lý Mạng xã hội", "level": "Intermediate" },
+    { "name": "Graphic Design (Canva, Photoshop) | Thiết kế đồ họa (Canva, Photoshop)", "level": "Intermediate" }
+  ],
+  "timeline": [
+    { "time": "Day 1", "title": "Orientation & Onboarding | Định hướng & Nhận việc", "description": "First day of my internship in Taipei! Met the team and set up my dev workstation. | Ngày đầu tiên thực tập tại Đài Bắc! Gặp gỡ đội ngũ và thiết lập góc làm việc." },
+    { "time": "Day 2", "title": "Product Walkthrough | Giới thiệu Sản phẩm", "description": "Attended product training sessions and learned about key metrics. | Tham gia các buổi đào tạo sản phẩm và tìm hiểu các chỉ số kinh doanh cốt lõi." },
+    { "time": "Day 3", "title": "Project Briefing | Giao nhiệm vụ Dự án", "description": "Met with my mentor and started competitor research. | Họp với người hướng dẫn và bắt đầu nghiên cứu đối thủ cạnh tranh." },
+    { "time": "Day 4", "title": "Competitor Analysis | Phân tích Đối thủ", "description": "Conducted deep-dive research into key Southeast Asian competitor metrics. | Thực hiện nghiên cứu sâu về các chỉ số của đối thủ tại Đông Nam Á." },
+    { "time": "Day 5", "title": "First Weekly Review | Báo cáo tuần đầu tiên", "description": "Presented my initial findings to the project mentor and got feedback. | Trình bày các kết quả nghiên cứu ban đầu với người hướng dẫn và nhận phản hồi." },
+    { "time": "Day 6", "title": "Mandarin Practice | Luyện tập Tiếng Trung", "description": "Explored a library cafe in Taipei and practiced speaking Mandarin with locals. | Khám phá quán cafe thư viện tại Đài Bắc và luyện nói tiếng Trung với người bản xứ." },
+    { "time": "Day 7", "title": "Planning for Week 2 | Lập kế hoạch tuần 2", "description": "Planned tasks for the upcoming week and refreshed my spreadsheet models. | Lập kế hoạch công việc tuần tới và cập nhật các mô hình bảng tính." },
+    { "time": "Day 8", "title": "Data Modeling | Mô hình hóa Dữ liệu", "description": "Began quantitative data collection of user acquisition costs. | Bắt đầu thu thập dữ liệu định lượng về chi phí thu hút người dùng." },
+    { "time": "Day 9", "title": "Cross-Functional Sync | Họp phối hợp phòng ban", "description": "Synced with the product design team to align marketing goals. | Họp với nhóm thiết kế sản phẩm để đồng bộ hóa mục tiêu tiếp thị." },
+    { "time": "Day 10", "title": "Drafting Project Proposal | Soạn thảo Đề xuất Dự án", "description": "Began drafting the marketing strategy proposal for the Vietnamese market. | Bắt đầu soạn thảo đề xuất chiến lược tiếp thị cho thị trường Việt Nam." },
+    { "time": "Day 11", "title": "Presentation Deck Prep | Chuẩn bị Slide báo cáo", "description": "Designed presentation slides to showcase market research insights. | Thiết kế slide thuyết trình để hiển thị các phân tích nghiên cứu thị trường." },
+    { "time": "Day 12", "title": "Pitch Rehearsal | Tập dượt Thuyết trình", "description": "Rehearsed my project pitch and polished the speaking script. | Tập dượt thuyết trình dự án và trau chuốt kịch bản nói." },
+    { "time": "Day 13", "title": "Weekend Trip to Tamsui | Dã ngoại Đạm Thủy", "description": "Visited Tamsui to watch the sunset and recorded footage for my vlog. | Ghé thăm Đạm Thủy ngắm hoàng hôn và quay tư liệu cho vlog." },
+    { "time": "Day 14", "title": "Vlog Editing | Dựng video Vlog", "description": "Wrote the script and edited the weekly vlog footage of Taipei street life. | Viết kịch bản và dựng phim vlog hàng tuần về cuộc sống đường phố Đài Bắc." },
+    { "time": "Day 15", "title": "Mid-Point Presentation | Báo cáo Giữa kỳ", "description": "Presented the marketing proposal to managers and received feedback. | Thuyết trình đề xuất tiếp thị với các quản lý và nhận phản hồi." },
+    { "time": "Day 16", "title": "Implementing Feedback | Áp dụng Phản hồi", "description": "Adjusted campaign targets based on feedback, focusing on localized social media. | Điều chỉnh mục tiêu chiến dịch dựa trên phản hồi, tập trung vào mạng xã hội bản địa." },
+    { "time": "Day 17", "title": "Localization Research | Nghiên cứu Bản địa hóa", "description": "Interviewed local university students to understand consumer behaviors. | Phỏng vấn sinh viên đại học bản xứ để tìm hiểu hành vi tiêu dùng." },
+    { "time": "Day 18", "title": "Marketing Channel Analysis | Phân tích Kênh tiếp thị", "description": "Analyzed digital marketing channel metrics to determine the best ROI. | Phân tích số liệu kênh tiếp thị số để xác định tỷ suất sinh lời tốt nhất." },
+    { "time": "Day 19", "title": "Team Lunch & Sync | Ăn trưa & Giao lưu", "description": "Had a fun lunch with the team and shared stories about Vietnamese culture. | Ăn trưa vui vẻ cùng đội ngũ và chia sẻ những câu chuyện về văn hóa Việt Nam." },
+    { "time": "Day 20", "title": "Hiking in Xiangshan | Leo núi Tượng Sơn", "description": "Hiked Elephant Mountain (Xiangshan) for a scenic view of Taipei 101. | Leo núi Tượng Sơn để ngắm toàn cảnh tháp Taipei 101." },
+    { "time": "Day 21", "title": "Vlog Scriptwriting | Viết kịch bản Vlog", "description": "Wrote the script for my weekly vlog and planned the timeline. | Viết kịch bản cho vlog hàng tuần của mình và lên lịch trình." },
+    { "time": "Day 22", "title": "Campaign Setup | Thiết lập Chiến dịch", "description": "Launched test ad copies for the localized campaign roadmap. | Chạy thử nghiệm các mẫu quảng cáo cho lộ trình chiến dịch bản địa hóa." },
+    { "time": "Day 23", "title": "Performance Monitoring | Theo dõi Hiệu suất", "description": "Tracked clicks and conversion rates of the test marketing campaign. | Theo dõi lượt click và tỷ lệ chuyển đổi của chiến dịch tiếp thị thử nghiệm." },
+    { "time": "Day 24", "title": "A/B Testing & Analysis | Thử nghiệm A/B & Phân tích", "description": "Conducted A/B testing on different landing page designs. | Thực hiện thử nghiệm A/B trên các thiết kế trang đích khác nhau." },
+    { "time": "Day 25", "title": "Drafting Final Report | Soạn Báo cáo Cuối kỳ", "description": "Began writing the final internship report summarizing project accomplishments. | Bắt đầu viết báo cáo thực tập cuối kỳ tóm tắt các thành tựu dự án." },
+    { "time": "Day 26", "title": "Slides Polish | Hoàn thiện Slide", "description": "Polished the final slide deck, focusing on ROI and business impact. | Hoàn thiện slide thuyết trình cuối cùng, tập trung vào ROI và tầm ảnh hưởng." },
+    { "time": "Day 27", "title": "Exploring Jiufen | Khám phá Cửu Phần", "description": "Spent Saturday exploring the beautiful lantern streets of Jiufen. | Dành ngày thứ Bảy khám phá những con phố đèn lồng xinh đẹp tại Cửu Phần." },
+    { "time": "Day 28", "title": "Subtitles & Editing | Viết phụ đề & Dựng phim", "description": "Finished editing my internship vlog and added English & Vietnamese subtitles. | Hoàn thành dựng vlog thực tập, thêm phụ đề tiếng Anh & tiếng Việt." },
+    { "time": "Day 29", "title": "Presentation Practice | Luyện tập Thuyết trình", "description": "Rehearsed my final presentation and refined answers for Q&A. | Tập dượt thuyết trình cuối cùng và chuẩn bị câu trả lời cho phần Q&A." },
+    { "time": "Day 30", "title": "Grand Final Pitch | Báo cáo Tổng kết", "description": "Delivered my final presentation to the executive team and got high praise! | Thuyết trình tổng kết với ban giám đốc và nhận được đánh giá cao!" },
+    { "time": "Day 31", "title": "Graduation & Farewell | Lễ Tốt nghiệp & Chia tay", "description": "Last day of internship! Met with the team, collected certificates, and took photos. | Ngày thực tập cuối cùng! Giao lưu chia tay, nhận chứng nhận và chụp ảnh lưu niệm." }
+  ],
+  "vlogs": [
+    {
+      "id": "vlog-1",
+      "title": "A Day in my Life as a Vietnamese Student in Taipei | Một ngày làm du học sinh Việt Nam tại Đài Bắc",
+      "description": "Come along with me for a busy Tuesday! Attending class, grabing bubble tea, studying at a cafe... | Đồng hành cùng mình trong một ngày thứ Ba bận rộn! Lên lớp, uống trà sữa, học bài tại quán cafe...",
+      "category": "daily",
+      "videoType": "embed",
+      "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "coverImage": "images/profile.jpg",
+      "date": "2026-06-15"
+    },
+    {
+      "id": "vlog-2",
+      "title": "How I Landed My Internship in a Taiwanese Firm | Cách mình ứng tuyển thực tập thành công tại Đài Loan",
+      "description": "Sharing my resume prep, interview experiences, and positive tips for international students. | Chia sẻ quá trình chuẩn bị hồ sơ, kinh nghiệm phỏng vấn và các mẹo tích cực.",
+      "category": "work",
+      "videoType": "embed",
+      "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "coverImage": "images/profile.jpg",
+      "date": "2026-06-12"
+    }
+  ],
+  "album": [
+    {
+      "id": "album-1",
+      "title": "My Part-Time Job at Ten Ren's Tea | Công việc làm thêm tại Thiên Nhân Minh Trà (天仁茗茶)",
+      "description": "Working as a waitress at Ten Ren's Tea (天仁茗茶) in Taipei since May 2026. Managing table services, welcoming customers, and taking orders in Mandarin Chinese. | Làm phục vụ bàn tại nhà hàng trà nổi tiếng Thiên Nhân Minh Trà (天仁茗茶) từ tháng 5/2026 đến nay. Sắp xếp bàn, chào đón khách và nhận order bằng tiếng Trung.",
+      "image": "images/waitress/S__62742535.jpg"
+    },
+    {
+      "id": "album-2",
+      "title": "Waitress Diaries & Teamwork | Nhật ký làm thêm & Tinh thần đồng đội",
+      "description": "Being part of the service crew at Ten Ren's Tea (天仁茗茶) for over a month now. Collaborating with Taiwanese teammates to deliver high-quality traditional tea and dining experiences. | Đồng hành cùng đội ngũ phục vụ tại 天仁茗茶 được hơn 1 tháng. Hợp tác cùng các đồng nghiệp Đài Loan để mang lại trải nghiệm ẩm thực và trà truyền thống tốt nhất.",
+      "image": "images/waitress/S__62742536.jpg"
+    }
+  ]
+}

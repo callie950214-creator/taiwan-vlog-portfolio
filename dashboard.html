@@ -74,11 +74,41 @@
             </div>
 
             <div class="form-group">
+              <label for="prof-avatar">Profile Avatar Image Path <span style="font-weight:normal;color:var(--text-light)">(e.g., <code>images/profile.jpg</code>)</span></label>
+              <input type="text" id="prof-avatar" class="form-control" placeholder="images/profile.jpg">
+            </div>
+
+            <div class="form-group">
               <label for="prof-bio">Short Biography</label>
               <textarea id="prof-bio" class="form-control" rows="5" required placeholder="Describe your student life in Taiwan and your positive goals..."></textarea>
             </div>
 
             <button type="submit" class="btn btn-primary" style="width: 100%;">💾 Save Profile Details</button>
+          </form>
+        </div>
+
+        <!-- Edit Internship Log Card -->
+        <div class="db-card">
+          <h2>Edit July Internship Log 📅</h2>
+          <form id="timeline-form">
+            <div class="form-group">
+              <label for="log-day-select">Select Day</label>
+              <select id="log-day-select" class="form-control">
+                <!-- Populated dynamically via JS -->
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="log-day-title">Day Title</label>
+              <input type="text" id="log-day-title" class="form-control" required placeholder="Orientation & Onboarding">
+            </div>
+
+            <div class="form-group">
+              <label for="log-day-desc">Day Accomplishments / Description</label>
+              <textarea id="log-day-desc" class="form-control" rows="4" required placeholder="Describe what you did on this day..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">💾 Save Day Log</button>
           </form>
         </div>
 
@@ -175,6 +205,40 @@
           <div class="db-vlog-list" id="db-vlog-list">
             <!-- Rendered dynamically via dashboard.js -->
             <p style="text-align: center; color: var(--text-light);">Loading videos list...</p>
+          </div>
+        </div>
+
+        <!-- Manage Waitress Album -->
+        <div class="db-card">
+          <h2>Manage Waitress Album 📸</h2>
+          
+          <!-- Add Photo Form -->
+          <form id="album-form" style="margin-bottom: 30px; border-bottom: 1px solid var(--border-color); padding-bottom: 24px;">
+            <h3 style="font-size:1.1rem; margin-bottom:15px; color:var(--primary-color);">Add Photo to Album</h3>
+            
+            <div class="form-group">
+              <label for="album-title">Photo Title / Caption</label>
+              <input type="text" id="album-title" class="form-control" required placeholder="Serving with a Smile | Ca làm việc vui vẻ">
+            </div>
+
+            <div class="form-group">
+              <label for="album-image">Photo File Path <span style="font-weight:normal;color:var(--text-light)">(e.g., <code>images/waitress/photo.jpg</code>)</span></label>
+              <input type="text" id="album-image" class="form-control" required placeholder="images/waitress/S__62742535.jpg">
+            </div>
+
+            <div class="form-group">
+              <label for="album-desc">Photo Description</label>
+              <textarea id="album-desc" class="form-control" rows="3" required placeholder="Describe what you are doing in this photo..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-sm" style="width: 100%;">📸 Add Photo to Album</button>
+          </form>
+
+          <!-- List of Album Photos -->
+          <h3 style="font-size:1.1rem; margin-bottom:15px; color:var(--primary-color);">Current Album Photos</h3>
+          <div class="db-album-list" id="db-album-list">
+            <!-- Rendered dynamically via dashboard.js -->
+            <p style="text-align: center; color: var(--text-light);">Loading album photos...</p>
           </div>
         </div>
       </div>
