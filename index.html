@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phuong Le - Life in Taiwan & Vlog Portfolio</title>
+  <meta name="description" content="A personal portfolio website documenting the study, work, and internship life of Phuong Le, a Vietnamese international student in Taiwan. Spreading positivity through daily vlogs and career growth.">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation Header -->
+  <header>
+    <div class="container nav-wrapper">
+      <a href="index.html" class="logo">
+        PHUONG LE <span>.TW</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#timeline">My Day</a></li>
+        <li><a href="#vlogs">Vlogs & Videos</a></li>
+        <li><a href="#career">Career & CV</a></li>
+      </ul>
+      <button id="theme-toggle" class="theme-toggle-btn" title="Toggle theme">🌙</button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="about" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span>🇹🇼</span> Study, Work & Life in Taiwan
+        </div>
+        <h1>Hi, I'm <span id="profile-name">Phuong Le</span> 👋</h1>
+        <h3 style="font-size: 1.5rem; margin-bottom: 15px; color: var(--primary-color);" id="profile-role">
+          Marketing Specialist & Content Creator
+        </h3>
+        <p class="hero-bio" id="profile-bio">
+          Loading biography details...
+        </p>
+        <div class="hero-actions">
+          <a href="#vlogs" class="btn btn-primary">Watch My Vlogs 🎥</a>
+          <a href="#career" class="btn btn-secondary">View Interactive CV 📄</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="avatar-wrapper">
+          <img id="avatar" src="images/profile.jpg" alt="Phuong Le" class="avatar-image">
+        </div>
+        <div class="floating-badge fb-1">
+          <span>✨</span> Spreading Positivity
+        </div>
+        <div class="floating-badge fb-2">
+          <span>💼</span> Upcoming Internship
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive "A Day in the Life" Timeline -->
+  <section id="timeline" class="section" style="background-color: rgba(45, 106, 79, 0.02);">
+    <div class="container">
+      <div class="section-title">
+        <h2>A Day in My Life</h2>
+        <p>Take a peek at how I balance studying at a top Taiwanese university, part-time work, and vlogging.</p>
+      </div>
+      
+      <div class="timeline-container" id="timeline-container">
+        <!-- Rendered dynamically via app.js -->
+        <p style="text-align: center; color: var(--text-light);">Loading schedule timeline...</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Vlog & Video Section -->
+  <section id="vlogs" class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2>My Daily Vlogs & Work Videos</h2>
+        <p>I post updates about daily work, language study tips, and my upcoming Taiwanese company internship.</p>
+      </div>
+
+      <!-- Filter Categories -->
+      <div class="vlog-filter-bar" id="filter-bar">
+        <button class="filter-btn active" data-filter="all">All Videos</button>
+        <button class="filter-btn" data-filter="daily">Daily Life</button>
+        <button class="filter-btn" data-filter="study">Study & Mandarin</button>
+        <button class="filter-btn" data-filter="work">Work & Internship</button>
+        <button class="filter-btn" data-filter="travel">Taiwan Travel</button>
+      </div>
+
+      <!-- Video Card Grid -->
+      <div class="vlog-grid" id="vlog-grid">
+        <!-- Rendered dynamically via app.js -->
+        <p style="text-align: center; color: var(--text-light); grid-column: 1/-1;">Loading video posts...</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Career & CV Section -->
+  <section id="career" class="section" style="background-color: rgba(45, 106, 79, 0.02); border-top: 1px solid var(--border-color);">
+    <div class="container">
+      <div class="section-title">
+        <h2>Interactive Career CV</h2>
+        <p>Combining academic business foundations with real-world content creation. Open to roles in Taiwan & Vietnam.</p>
+      </div>
+
+      <div class="cv-wrapper">
+        <!-- Education & Achievements -->
+        <div class="cv-block">
+          <h3>🎓 Education & Internships</h3>
+          
+          <div class="education-item">
+            <div class="edu-meta">
+              <span class="edu-date">Upcoming (July 2026)</span>
+            </div>
+            <h4 class="edu-title">Project Management & Operations Intern</h4>
+            <p class="edu-inst">Taiwanese Tech Corporation | Taipei, Taiwan</p>
+            <p class="edu-desc">
+              Selected for a summer internship. Preparing to support cross-border business development, coordinate project milestones, and translate communication between Vietnamese and Taiwanese teams.
+            </p>
+          </div>
+
+          <div class="education-item">
+            <div class="edu-meta">
+              <span class="edu-date">2023 - Present</span>
+            </div>
+            <h4 class="edu-title">Bachelor of Business & International Trade</h4>
+            <p class="edu-inst" id="profile-university">National Taiwan University</p>
+            <p class="edu-desc">
+              Studying in Taipei. Focusing on Global Supply Chain, Content Strategy, and Marketing Analytics. Actively participating in bilingual student business leagues.
+            </p>
+          </div>
+
+          <div class="education-item">
+            <div class="edu-meta">
+              <span class="edu-date">2024 - 2025</span>
+            </div>
+            <h4 class="edu-title">Part-Time Content Strategy Assistant</h4>
+            <p class="edu-inst">Cozy Taipei Media Hub</p>
+            <p class="edu-desc">
+              Assisted in drafting scripts, recording videos, and managing community engagement on Instagram, growing organic traffic for student activities by 40%.
+            </p>
+          </div>
+        </div>
+
+        <!-- Skills and Strengths -->
+        <div class="cv-block">
+          <h3>⚡ Technical Skills & Languages</h3>
+          <div id="skills-container">
+            <!-- Rendered dynamically via app.js -->
+            <p style="color: var(--text-light);">Loading skills portfolio...</p>
+          </div>
+          
+          <h3 style="margin-top: 40px; margin-bottom: 20px; font-size: 1.3rem;">🌱 Mindsets & Values</h3>
+          <div class="skills-badges">
+            <span class="skill-badge">Positivity First ✨</span>
+            <span class="skill-badge">Adaptive & Resilient 🌿</span>
+            <span class="skill-badge">Cross-Cultural Team Player 🤝</span>
+            <span class="skill-badge">Fast Learner 🚀</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Modal Video Player Overlay -->
+  <div class="modal-overlay" id="modal-overlay">
+    <div class="modal-container" id="modal-container">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close video player">✕</button>
+      <div class="modal-video-wrapper" id="modal-video-wrapper">
+        <!-- Embed player loaded via JS -->
+      </div>
+      <div class="modal-body">
+        <div class="modal-meta" id="modal-meta">
+          <!-- Category and dates -->
+        </div>
+        <h2 class="modal-title" id="modal-title">Video Title</h2>
+        <p class="modal-desc" id="modal-desc">Detailed video description goes here...</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-about">
+        <h3>Phuong Le</h3>
+        <p id="footer-bio">A Vietnamese student life vlog and career CV portal. Documenting study, work, and growth in Taiwan.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#timeline">Daily Schedule</a></li>
+          <li><a href="#vlogs">My Vlogs</a></li>
+          <li><a href="#career">Interactive Resume</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Let's Connect</h4>
+        <p>📧 Email: <a href="mailto:phuongle.tw@gmail.com" id="email-link">phuongle.tw@gmail.com</a></p>
+        <p>📸 Instagram: <a href="https://instagram.com/phuongle439" target="_blank" id="instagram-link">@phuongle439</a></p>
+        <p>📍 Location: <span id="profile-location">Taipei, Taiwan</span></p>
+      </div>
+    </div>
+    
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Phuong Le. All rights reserved. Made with positivity 🌿</p>
+      <div class="social-links">
+        <a href="https://instagram.com/phuongle439" target="_blank" class="social-icon">📸</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Application Logic Scripts -->
+  <script src="js/app.js"></script>
+</body>
+</html>

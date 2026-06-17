@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CMS Dashboard - Phuong Le Portfolio</title>
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation Header -->
+  <header>
+    <div class="container nav-wrapper">
+      <a href="index.html" class="logo">
+        PHUONG LE <span>.CMS</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" style="color: var(--primary-color); font-weight: 700;">👁️ View Public Website</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Dashboard Main Container -->
+  <main class="db-container">
+    <div class="db-header">
+      <div class="db-title">
+        <h1>Content Management System ⚙️</h1>
+        <p style="color: var(--text-light); margin-top: 4px;">Update your bio, edit your digital CV, and post new daily work/life videos.</p>
+      </div>
+    </div>
+
+    <div class="db-grid">
+      
+      <!-- Left Column: Edit Profile Details -->
+      <div>
+        <div class="db-card">
+          <h2>Edit Profile & CV Info</h2>
+          <form id="profile-form">
+            <div class="form-group">
+              <label for="prof-name">Full Name</label>
+              <input type="text" id="prof-name" class="form-control" required placeholder="Phuong Le">
+            </div>
+            
+            <div class="form-group">
+              <label for="prof-role">Target Job Role</label>
+              <input type="text" id="prof-role" class="form-control" required placeholder="Marketing Intern / Content Producer">
+            </div>
+
+            <div class="form-group">
+              <label for="prof-location">Location</label>
+              <input type="text" id="prof-location" class="form-control" required placeholder="Taipei, Taiwan">
+            </div>
+
+            <div class="form-group">
+              <label for="prof-university">University</label>
+              <input type="text" id="prof-university" class="form-control" required placeholder="National Taiwan University">
+            </div>
+
+            <div class="form-group">
+              <label for="prof-major">Major</label>
+              <input type="text" id="prof-major" class="form-control" required placeholder="International Business">
+            </div>
+
+            <div class="form-group">
+              <label for="prof-email">Email Address</label>
+              <input type="email" id="prof-email" class="form-control" required placeholder="phuongle.tw@gmail.com">
+            </div>
+
+            <div class="form-group">
+              <label for="prof-instagram">Instagram Handle</label>
+              <input type="text" id="prof-instagram" class="form-control" required placeholder="phuongle439">
+            </div>
+
+            <div class="form-group">
+              <label for="prof-bio">Short Biography</label>
+              <textarea id="prof-bio" class="form-control" rows="5" required placeholder="Describe your student life in Taiwan and your positive goals..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">💾 Save Profile Details</button>
+          </form>
+        </div>
+
+        <!-- Export & Local database storage instructions -->
+        <div class="db-card" style="background-color: rgba(82, 183, 136, 0.05);">
+          <h2>Export & Sync Changes</h2>
+          <div class="backup-box">
+            <h3>How to save changes permanently:</h3>
+            <p>
+              Your edits are currently saved in your web browser (locally). To make them permanent or show up if you put this website online:
+            </p>
+            <ol style="margin-left: 18px; font-size: 0.85rem; color: var(--text-light); margin-bottom: 15px;">
+              <li style="margin-bottom: 6px;">Click the <strong>Export data.json</strong> button below to download your updated data file.</li>
+              <li style="margin-bottom: 6px;">Drag/copy this downloaded file into your website folder: <code>taiwan-vlog-portfolio/</code></li>
+              <li>Overwrite the existing <code>data.json</code> file.</li>
+            </ol>
+            <button id="btn-export" class="btn btn-primary btn-sm" style="width: 100%; border-radius: 10px;">📥 Export data.json File</button>
+          </div>
+
+          <div style="margin-top: 24px;">
+            <label for="file-import" style="display:block; font-weight:600; font-size:0.85rem; margin-bottom:8px;">
+              Import Existing data.json File
+            </label>
+            <input type="file" id="file-import" class="form-control" accept=".json" style="padding: 8px;">
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Add / Edit Vlog Posts -->
+      <div>
+        <!-- Vlog Post Form -->
+        <div class="db-card">
+          <h2 id="vlog-form-title">Add New Vlog Post 🎥</h2>
+          <form id="vlog-form">
+            <div class="form-group">
+              <label for="vlog-title">Video / Vlog Title</label>
+              <input type="text" id="vlog-title" class="form-control" required placeholder="A Day in my Life as a Vietnamese Student in Taipei">
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+              <div class="form-group">
+                <label for="vlog-date">Post Date</label>
+                <input type="date" id="vlog-date" class="form-control" required>
+              </div>
+
+              <div class="form-group">
+                <label for="vlog-category">Category</label>
+                <select id="vlog-category" class="form-control" required>
+                  <option value="daily">Daily Life</option>
+                  <option value="study">Study & Mandarin</option>
+                  <option value="work">Work & Internship</option>
+                  <option value="travel">Taiwan Travel</option>
+                </select>
+              </div>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1.5fr; gap: 16px;">
+              <div class="form-group">
+                <label for="vlog-type">Video Host Type</label>
+                <select id="vlog-type" class="form-control" required>
+                  <option value="local">Local MP4 File</option>
+                  <option value="youtube">YouTube Link</option>
+                  <option value="instagram">Instagram Reel</option>
+                  <option value="embed">Generic Embed URL</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="vlog-url">Video File Path</label>
+                <input type="text" id="vlog-url" class="form-control" required placeholder="videos/vlog1.mp4" value="videos/vlog1.mp4">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="vlog-cover">Cover Thumbnail Image Path <span style="font-weight:normal;color:var(--text-light)">(e.g., <code>images/cover1.jpg</code> or leave blank for default)</span></label>
+              <input type="text" id="vlog-cover" class="form-control" placeholder="images/profile.jpg">
+            </div>
+
+            <div class="form-group">
+              <label for="vlog-desc">Video Description</label>
+              <textarea id="vlog-desc" class="form-control" rows="4" required placeholder="Describe what happens in this vlog..."></textarea>
+            </div>
+
+            <div style="display: flex; gap: 12px; justify-content: flex-end;">
+              <button type="button" id="btn-cancel-edit" class="btn btn-secondary" style="display: none;">Cancel</button>
+              <button type="submit" class="btn btn-primary">Publish Vlog Post 🚀</button>
+            </div>
+          </form>
+        </div>
+
+        <!-- List of Existing Videos -->
+        <div class="db-card">
+          <h2>Manage Your Videos</h2>
+          <div class="db-vlog-list" id="db-vlog-list">
+            <!-- Rendered dynamically via dashboard.js -->
+            <p style="text-align: center; color: var(--text-light);">Loading videos list...</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer Section -->
+  <footer style="margin-top: 80px; background-color: #111B15; color: #9BB1A5; padding: 40px 0; text-align: center; font-size: 0.85rem; border-top: 1px solid #21352A;">
+    <div class="container">
+      <p>&copy; 2026 Phuong Le. Content Management System Dashboard. Spreading positivity 🌿</p>
+      <p style="margin-top: 8px;"><a href="index.html" style="color: var(--primary-light);">← Back to View Main Website</a></p>
+    </div>
+  </footer>
+
+  <!-- Dashboard Controller Script -->
+  <script src="js/dashboard.js"></script>
+</body>
+</html>
