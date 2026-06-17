@@ -1,91 +1,319 @@
 {
   "profile": {
-    "name": "Phuong Le",
+    "name": "Callie Lee",
     "instagram": "phuongle439",
-    "email": "phuongle.tw@gmail.com",
-    "location": "Taipei, Taiwan | Đài Bắc, Đài Loan",
-    "university": "National Taiwan University | Đại học Quốc gia Đài Loan",
-    "major": "International Business & Content Marketing | Kinh doanh Quốc tế & Tiếp thị Nội dung",
-    "bio": "Hi there! I am a Vietnamese international student documenting my daily rhythm of study, creative work, and content creation in Taiwan. Let's connect! | Xin chào! Mình là du học sinh Việt Nam chia sẻ về cuộc sống học tập, công việc và sáng tạo nội dung tại Đài Loan. Kết nối với mình nhé!",
+    "email": "callie950214@gmail.com",
+    "location": {
+      "en": "Taipei City, Taiwan",
+      "vi": "Thành phố Đài Bắc, Đài Loan",
+      "zh": "台灣台北市"
+    },
+    "university": {
+      "en": "Ming Chuan University",
+      "vi": "Đại học Minh Truyền",
+      "zh": "銘傳大學"
+    },
+    "major": {
+      "en": "Advertising & Strategic Marketing",
+      "vi": "Quảng cáo & Tiếp thị Chiến lược",
+      "zh": "廣告暨策略行銷學系"
+    },
+    "bio": {
+      "en": "I am a third-year student at Ming Chuan University majoring in Advertising and Strategic Marketing. Specialized in creative advertising, marketing strategy, and data analysis. I possess a cross-cultural perspective and communication skills in Mandarin, Vietnamese, and English.",
+      "vi": "Tôi là sinh viên năm thứ ba chuyên ngành Quảng cáo & Tiếp thị Chiến lược tại Đại học Minh Truyền. Sở trường về sáng tạo quảng cáo, chiến lược tiếp thị và phân tích dữ liệu, có tư duy đa văn hóa và khả năng giao tiếp lưu loát bằng tiếng Trung, tiếng Anh và tiếng Việt.",
+      "zh": "我是銘傳大學廣告暨策略行銷學系三年級學生，擅長廣告創意、行銷策略與數據分析。具備中文、越南語與英文三種語言的溝通能力，具備跨文化視野與國際溝通能力，致力於為廣告活動提供具國際競爭力的創意方案。"
+    },
     "avatar": "images/profile.jpg",
-    "target_role": "Marketing Specialist & Content Creator | Chuyên viên Marketing & Sáng tạo nội dung",
-    "adminPasscode": "1234"
+    "target_role": {
+      "en": "Advertising & Strategic Marketing",
+      "vi": "Quảng cáo & Tiếp thị Chiến lược",
+      "zh": "廣告暨策略行銷"
+    }
   },
   "skills": [
-    { "name": "Content Strategy & Copywriting | Chiến lược Nội dung & Viết lách", "level": "Advanced" },
-    { "name": "Video Editing (Premiere, CapCut) | Dựng video (Premiere, CapCut)", "level": "Advanced" },
-    { "name": "Bilingual Communication (English, Vietnamese) | Giao tiếp Song ngữ (Anh, Việt)", "level": "Fluent" },
-    { "name": "Mandarin Chinese (TOCFL Band B) | Tiếng Trung (TOCFL Band B)", "level": "Conversational" },
-    { "name": "Social Media Management | Quản lý Mạng xã hội", "level": "Intermediate" },
-    { "name": "Graphic Design (Canva, Photoshop) | Thiết kế đồ họa (Canva, Photoshop)", "level": "Intermediate" }
-  ],
-  "timeline": [
-    { "time": "Day 1", "title": "Orientation & Onboarding | Định hướng & Nhận việc", "description": "First day of my internship in Taipei! Met the team and set up my dev workstation. | Ngày đầu tiên thực tập tại Đài Bắc! Gặp gỡ đội ngũ và thiết lập góc làm việc." },
-    { "time": "Day 2", "title": "Product Walkthrough | Giới thiệu Sản phẩm", "description": "Attended product training sessions and learned about key metrics. | Tham gia các buổi đào tạo sản phẩm và tìm hiểu các chỉ số kinh doanh cốt lõi." },
-    { "time": "Day 3", "title": "Project Briefing | Giao nhiệm vụ Dự án", "description": "Met with my mentor and started competitor research. | Họp với người hướng dẫn và bắt đầu nghiên cứu đối thủ cạnh tranh." },
-    { "time": "Day 4", "title": "Competitor Analysis | Phân tích Đối thủ", "description": "Conducted deep-dive research into key Southeast Asian competitor metrics. | Thực hiện nghiên cứu sâu về các chỉ số của đối thủ tại Đông Nam Á." },
-    { "time": "Day 5", "title": "First Weekly Review | Báo cáo tuần đầu tiên", "description": "Presented my initial findings to the project mentor and got feedback. | Trình bày các kết quả nghiên cứu ban đầu với người hướng dẫn và nhận phản hồi." },
-    { "time": "Day 6", "title": "Mandarin Practice | Luyện tập Tiếng Trung", "description": "Explored a library cafe in Taipei and practiced speaking Mandarin with locals. | Khám phá quán cafe thư viện tại Đài Bắc và luyện nói tiếng Trung với người bản xứ." },
-    { "time": "Day 7", "title": "Planning for Week 2 | Lập kế hoạch tuần 2", "description": "Planned tasks for the upcoming week and refreshed my spreadsheet models. | Lập kế hoạch công việc tuần tới và cập nhật các mô hình bảng tính." },
-    { "time": "Day 8", "title": "Data Modeling | Mô hình hóa Dữ liệu", "description": "Began quantitative data collection of user acquisition costs. | Bắt đầu thu thập dữ liệu định lượng về chi phí thu hút người dùng." },
-    { "time": "Day 9", "title": "Cross-Functional Sync | Họp phối hợp phòng ban", "description": "Synced with the product design team to align marketing goals. | Họp với nhóm thiết kế sản phẩm để đồng bộ hóa mục tiêu tiếp thị." },
-    { "time": "Day 10", "title": "Drafting Project Proposal | Soạn thảo Đề xuất Dự án", "description": "Began drafting the marketing strategy proposal for the Vietnamese market. | Bắt đầu soạn thảo đề xuất chiến lược tiếp thị cho thị trường Việt Nam." },
-    { "time": "Day 11", "title": "Presentation Deck Prep | Chuẩn bị Slide báo cáo", "description": "Designed presentation slides to showcase market research insights. | Thiết kế slide thuyết trình để hiển thị các phân tích nghiên cứu thị trường." },
-    { "time": "Day 12", "title": "Pitch Rehearsal | Tập dượt Thuyết trình", "description": "Rehearsed my project pitch and polished the speaking script. | Tập dượt thuyết trình dự án và trau chuốt kịch bản nói." },
-    { "time": "Day 13", "title": "Weekend Trip to Tamsui | Dã ngoại Đạm Thủy", "description": "Visited Tamsui to watch the sunset and recorded footage for my vlog. | Ghé thăm Đạm Thủy ngắm hoàng hôn và quay tư liệu cho vlog." },
-    { "time": "Day 14", "title": "Vlog Editing | Dựng video Vlog", "description": "Wrote the script and edited the weekly vlog footage of Taipei street life. | Viết kịch bản và dựng phim vlog hàng tuần về cuộc sống đường phố Đài Bắc." },
-    { "time": "Day 15", "title": "Mid-Point Presentation | Báo cáo Giữa kỳ", "description": "Presented the marketing proposal to managers and received feedback. | Thuyết trình đề xuất tiếp thị với các quản lý và nhận phản hồi." },
-    { "time": "Day 16", "title": "Implementing Feedback | Áp dụng Phản hồi", "description": "Adjusted campaign targets based on feedback, focusing on localized social media. | Điều chỉnh mục tiêu chiến dịch dựa trên phản hồi, tập trung vào mạng xã hội bản địa." },
-    { "time": "Day 17", "title": "Localization Research | Nghiên cứu Bản địa hóa", "description": "Interviewed local university students to understand consumer behaviors. | Phỏng vấn sinh viên đại học bản xứ để tìm hiểu hành vi tiêu dùng." },
-    { "time": "Day 18", "title": "Marketing Channel Analysis | Phân tích Kênh tiếp thị", "description": "Analyzed digital marketing channel metrics to determine the best ROI. | Phân tích số liệu kênh tiếp thị số để xác định tỷ suất sinh lời tốt nhất." },
-    { "time": "Day 19", "title": "Team Lunch & Sync | Ăn trưa & Giao lưu", "description": "Had a fun lunch with the team and shared stories about Vietnamese culture. | Ăn trưa vui vẻ cùng đội ngũ và chia sẻ những câu chuyện về văn hóa Việt Nam." },
-    { "time": "Day 20", "title": "Hiking in Xiangshan | Leo núi Tượng Sơn", "description": "Hiked Elephant Mountain (Xiangshan) for a scenic view of Taipei 101. | Leo núi Tượng Sơn để ngắm toàn cảnh tháp Taipei 101." },
-    { "time": "Day 21", "title": "Vlog Scriptwriting | Viết kịch bản Vlog", "description": "Wrote the script for my weekly vlog and planned the timeline. | Viết kịch bản cho vlog hàng tuần của mình và lên lịch trình." },
-    { "time": "Day 22", "title": "Campaign Setup | Thiết lập Chiến dịch", "description": "Launched test ad copies for the localized campaign roadmap. | Chạy thử nghiệm các mẫu quảng cáo cho lộ trình chiến dịch bản địa hóa." },
-    { "time": "Day 23", "title": "Performance Monitoring | Theo dõi Hiệu suất", "description": "Tracked clicks and conversion rates of the test marketing campaign. | Theo dõi lượt click và tỷ lệ chuyển đổi của chiến dịch tiếp thị thử nghiệm." },
-    { "time": "Day 24", "title": "A/B Testing & Analysis | Thử nghiệm A/B & Phân tích", "description": "Conducted A/B testing on different landing page designs. | Thực hiện thử nghiệm A/B trên các thiết kế trang đích khác nhau." },
-    { "time": "Day 25", "title": "Drafting Final Report | Soạn Báo cáo Cuối kỳ", "description": "Began writing the final internship report summarizing project accomplishments. | Bắt đầu viết báo cáo thực tập cuối kỳ tóm tắt các thành tựu dự án." },
-    { "time": "Day 26", "title": "Slides Polish | Hoàn thiện Slide", "description": "Polished the final slide deck, focusing on ROI and business impact. | Hoàn thiện slide thuyết trình cuối cùng, tập trung vào ROI và tầm ảnh hưởng." },
-    { "time": "Day 27", "title": "Exploring Jiufen | Khám phá Cửu Phần", "description": "Spent Saturday exploring the beautiful lantern streets of Jiufen. | Dành ngày thứ Bảy khám phá những con phố đèn lồng xinh đẹp tại Cửu Phần." },
-    { "time": "Day 28", "title": "Subtitles & Editing | Viết phụ đề & Dựng phim", "description": "Finished editing my internship vlog and added English & Vietnamese subtitles. | Hoàn thành dựng vlog thực tập, thêm phụ đề tiếng Anh & tiếng Việt." },
-    { "time": "Day 29", "title": "Presentation Practice | Luyện tập Thuyết trình", "description": "Rehearsed my final presentation and refined answers for Q&A. | Tập dượt thuyết trình cuối cùng và chuẩn bị câu trả lời cho phần Q&A." },
-    { "time": "Day 30", "title": "Grand Final Pitch | Báo cáo Tổng kết", "description": "Delivered my final presentation to the executive team and got high praise! | Thuyết trình tổng kết với ban giám đốc và nhận được đánh giá cao!" },
-    { "time": "Day 31", "title": "Graduation & Farewell | Lễ Tốt nghiệp & Chia tay", "description": "Last day of internship! Met with the team, collected certificates, and took photos. | Ngày thực tập cuối cùng! Giao lưu chia tay, nhận chứng nhận và chụp ảnh lưu niệm." }
-  ],
-  "vlogs": [
     {
-      "id": "vlog-1",
-      "title": "A Day in my Life as a Vietnamese Student in Taipei | Một ngày làm du học sinh Việt Nam tại Đài Bắc",
-      "description": "Come along with me for a busy Tuesday! Attending class, grabing bubble tea, studying at a cafe... | Đồng hành cùng mình trong một ngày thứ Ba bận rộn! Lên lớp, uống trà sữa, học bài tại quán cafe...",
-      "category": "daily",
-      "videoType": "embed",
-      "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-      "coverImage": "images/profile.jpg",
-      "date": "2026-06-15"
+      "name": {
+        "en": "Design & Media (Photoshop, Illustrator, Premiere, Canva)",
+        "vi": "Thiết kế & Mỹ thuật (Photoshop, Illustrator, Premiere, Canva)",
+        "zh": "設計與媒體 (Photoshop, Illustrator, Premiere, Canva)"
+      },
+      "level": "Advanced"
     },
     {
-      "id": "vlog-2",
-      "title": "How I Landed My Internship in a Taiwanese Firm | Cách mình ứng tuyển thực tập thành công tại Đài Loan",
-      "description": "Sharing my resume prep, interview experiences, and positive tips for international students. | Chia sẻ quá trình chuẩn bị hồ sơ, kinh nghiệm phỏng vấn và các mẹo tích cực.",
-      "category": "work",
-      "videoType": "embed",
-      "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-      "coverImage": "images/profile.jpg",
-      "date": "2026-06-12"
-    }
-  ],
-  "album": [
-    {
-      "id": "album-1",
-      "title": "My Part-Time Job at Ten Ren's Tea | Công việc làm thêm tại Thiên Nhân Minh Trà (天仁茗茶)",
-      "description": "Working as a waitress at Ten Ren's Tea (天仁茗茶) in Taipei since May 2026. Managing table services, welcoming customers, and taking orders in Mandarin Chinese. | Làm phục vụ bàn tại nhà hàng trà nổi tiếng Thiên Nhân Minh Trà (天仁茗茶) từ tháng 5/2026 đến nay. Sắp xếp bàn, chào đón khách và nhận order bằng tiếng Trung.",
-      "image": "images/waitress/S__62742535.jpg"
+      "name": {
+        "en": "Advertising & Marketing Strategy",
+        "vi": "Chiến lược Tiếp thị & Quảng cáo",
+        "zh": "廣告暨行銷策略"
+      },
+      "level": "Advanced"
     },
     {
-      "id": "album-2",
-      "title": "Waitress Diaries & Teamwork | Nhật ký làm thêm & Tinh thần đồng đội",
-      "description": "Being part of the service crew at Ten Ren's Tea (天仁茗茶) for over a month now. Collaborating with Taiwanese teammates to deliver high-quality traditional tea and dining experiences. | Đồng hành cùng đội ngũ phục vụ tại 天仁茗茶 được hơn 1 tháng. Hợp tác cùng các đồng nghiệp Đài Loan để mang lại trải nghiệm ẩm thực và trà truyền thống tốt nhất.",
-      "image": "images/waitress/S__62742536.jpg"
+      "name": {
+        "en": "Data Analysis & Consumer Insights",
+        "vi": "Phân tích Dữ liệu & Thấu hiểu Người tiêu dùng",
+        "zh": "數據分析與消費者洞察"
+      },
+      "level": "Advanced"
+    },
+    {
+      "name": {
+        "en": "AI & Office Productivity Tools",
+        "vi": "Công cụ AI & Tin học Văn phòng",
+        "zh": "AI工具與文書處理"
+      },
+      "level": "Advanced"
+    },
+    {
+      "name": {
+        "en": "Mandarin Chinese",
+        "vi": "Tiếng Trung (Phổ thông)",
+        "zh": "中文（華語）"
+      },
+      "level": "Fluent"
+    },
+    {
+      "name": {
+        "en": "Vietnamese",
+        "vi": "Tiếng Việt",
+        "zh": "越南語"
+      },
+      "level": "Native"
+    },
+    {
+      "name": {
+        "en": "English",
+        "vi": "Tiếng Anh",
+        "zh": "英文"
+      },
+      "level": "Basic"
     }
-  ]
+  ],
+  "internship": {
+    "title": {
+      "en": "Event Organization",
+      "vi": "Tổ chức sự kiện",
+      "zh": "活動企劃與執行"
+    },
+    "description": {
+      "en": "Project Management & Operations Intern at a Taiwanese Tech Corporation. Facilitating cross-border communications and coordinating marketing milestones.",
+      "vi": "Thực tập sinh Quản lý Dự án & Vận hành tại Tập đoàn Công nghệ Đài Loan. Hỗ trợ truyền thông xuyên biên giới và điều phối các chiến dịch tiếp thị.",
+      "zh": "於台灣科技企業擔任專案管理與營運實習生，協助跨國溝通並協調行銷時程。"
+    },
+    "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "videoType": "youtube",
+    "coverImage": "images/profile.jpg",
+    "details": [
+      {
+        "label": { "en": "Role", "vi": "Vai trò", "zh": "職位" },
+        "value": { "en": "Project Management Assistant", "vi": "Trợ lý Quản lý Dự án", "zh": "專案管理助理" }
+      },
+      {
+        "label": { "en": "Key Projects", "vi": "Dự án chính", "zh": "核心專案" },
+        "value": { "en": "Bilingual marketing roadmap setup", "vi": "Thiết lập lộ trình tiếp thị song ngữ", "zh": "規劃雙語行銷時程與對接" }
+      },
+      {
+        "label": { "en": "Takeaways", "vi": "Gặt hái", "zh": "學習收穫" },
+        "value": { "en": "Cross-cultural teamwork and agile coordination", "vi": "Làm việc nhóm đa văn hóa và điều phối linh hoạt", "zh": "跨文化團隊協作與敏捷專案管理" }
+      }
+    ]
+  },
+  "languages": {
+    "title": {
+      "en": "Language Ability",
+      "vi": "Khả năng ngôn ngữ",
+      "zh": "語言能力"
+    },
+    "description": {
+      "en": "Bilingual communication in Mandarin (Fluent), Vietnamese (Native), and English (Basic). Capable of working effectively in multicultural business environments.",
+      "vi": "Khả năng giao tiếp song ngữ Trung (Lưu loát), Việt (Bản xứ) và Anh (Cơ bản), sẵn sàng làm việc trong môi trường đa văn hóa.",
+      "zh": "具備中文（流利）、越南語（母語）與英文（基礎）溝通能力，能在多元文化商務環境中高效協作。"
+    },
+    "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "videoType": "youtube",
+    "coverImage": "images/profile.jpg",
+    "certifications": [
+      {
+        "name": {
+          "en": "Mandarin Chinese (TOCFL Band B / Fluent)",
+          "vi": "Tiếng Trung TOCFL Band B (Lưu loát)",
+          "zh": "華語文能力測驗 TOCFL Band B (流利)"
+        }
+      },
+      {
+        "name": {
+          "en": "English Communication (Basic)",
+          "vi": "Giao tiếp Tiếng Anh (Cơ bản)",
+          "zh": "英文溝通 (基礎)"
+        }
+      },
+      {
+        "name": {
+          "en": "Vietnamese (Native Speaker)",
+          "vi": "Tiếng Việt (Tiếng mẹ đẻ)",
+          "zh": "越南語 (母語)"
+        }
+      }
+    ]
+  },
+  "waitress": {
+    "title": {
+      "en": "Waitress Experience",
+      "vi": "Kinh nghiệm Làm thêm",
+      "zh": "餐飲服務經歷"
+    },
+    "description": {
+      "en": "Part-time waitress at Ten Ren's Tea (天仁茗茶) in Taipei. Honing customer service, adaptability, teamwork, and crisis management skills in a fast-paced environment.",
+      "vi": "Phục vụ bán thời gian tại Thiên Nhân Minh Trà (天仁茗茶). Rèn luyện kỹ năng dịch vụ khách hàng, ứng biến nhanh, làm việc nhóm và xử lý tình huống.",
+      "zh": "於台北天仁茗茶擔任兼職服務員，在快節奏環境中磨練客戶服務、適應力、團隊協作與危機處理能力。"
+    },
+    "photos": [
+      {
+        "title": {
+          "en": "Customer Service at Ten Ren's Tea",
+          "vi": "Dịch vụ Khách hàng tại Thiên Nhân Minh Trà",
+          "zh": "天仁茗茶第一線客戶服務"
+        },
+        "image": "images/waitress/S__62742535.jpg",
+        "description": {
+          "en": "Welcoming guests, table planning, and managing orders in Mandarin.",
+          "vi": "Chào đón khách hàng, sắp xếp bàn ăn và ghi order hoàn toàn bằng tiếng Trung.",
+          "zh": "用中文負責接待賓客、安排桌位與處理餐點訂單。"
+        }
+      },
+      {
+        "title": {
+          "en": "Teamwork & Collaboration",
+          "vi": "Tinh thần đồng đội & Hợp tác",
+          "zh": "團隊協作與溝通"
+        },
+        "image": "images/waitress/S__62742536.jpg",
+        "description": {
+          "en": "Collaborating with local Taiwanese crew to deliver traditional tea and dining experiences.",
+          "vi": "Cùng đồng nghiệp Đài Loan mang lại trải nghiệm dịch vụ và thưởng trà tốt nhất.",
+          "zh": "與台灣在地工作夥伴緊密協作，共同提供優質茶飲與用餐體驗。"
+        }
+      }
+    ]
+  },
+  "university": {
+    "title": {
+      "en": "University Life",
+      "vi": "Đời sống Đại học",
+      "zh": "大學生活軌跡"
+    },
+    "coverImage": "images/profile.jpg",
+    "timeline": [
+      {
+        "year": "2013 - 2016",
+        "title": {
+          "en": "Study at Vietnamese Nursing School",
+          "vi": "Học tại Cao đẳng Y tế Thái Bình, Việt Nam",
+          "zh": "就讀越南太平醫專 / 護理科"
+        },
+        "description": {
+          "en": "The high-pressure medical training honed my patience, precision, and attention to detail, teaching me to remain calm under emergency situations.",
+          "vi": "Sự rèn luyện trong môi trường y học áp lực cao đã giúp tôi rèn luyện tính kiên nhẫn, nghiêm túc và tỉ mỉ, đồng thời học được cách giữ bình tĩnh trong mọi tình huống khẩn cấp.",
+          "zh": "醫學環境的高壓洗禮，鍛鍊了我耐心、嚴謹、細緻的特質，並學會提在任何突發狀況下維持沉著冷靜。"
+        }
+      },
+      {
+        "year": "2017 - 2021",
+        "title": {
+          "en": "Worked at Medical Clinic",
+          "vi": "Làm việc tại Phòng khám Y khoa",
+          "zh": "任職於醫療診所"
+        },
+        "description": {
+          "en": "Enhanced time management and mastered front-line communication skills with patients, building a professional service and management mindset.",
+          "vi": "Trong thời gian này, tôi không chỉ cải thiện kỹ năng quản lý thời gian mà còn nắm vững nghệ thuật giao tiếp với khách hàng (bệnh nhân) ở tuyến đầu, xây dựng ý thức phục vụ và quản lý chuyên nghiệp.",
+          "zh": "這段時間我不僅精進了時間管理，更掌握了第一線與客戶（病患）溝通的技巧，建立起專業的服務與管理意識。"
+        }
+      },
+      {
+        "year": "2022",
+        "title": {
+          "en": "Decided to Step Out of Comfort Zone",
+          "vi": "Quyết định bước ra khỏi vùng an toàn",
+          "zh": "決定跳出舒適圈"
+        },
+        "description": {
+          "en": "Rediscovering my potential. Transferred to Ming Chuan University's Advertising & Strategic Marketing department, starting a cross-disciplinary challenge.",
+          "vi": "Tái khám phá bản thân. Sau khi phân tích kỹ lưỡng, tôi quyết định chuyển ngành sang học Quảng cáo & Tiếp thị Chiến lược tại Đại học Minh Truyền, mở ra thử thách giới hạn liên ngành.",
+          "zh": "重新探索自我。經過深度分析後，選擇來銘傳大學轉行至廣告暨策略行銷學系學習，開啟跨領域的極限挑戰。"
+        }
+      }
+    ],
+    "activities": [
+      {
+        "year": "2025 - Present",
+        "role": {
+          "en": "Assistant at the International Class Office",
+          "vi": "Trợ lý Văn phòng Lớp học Quốc tế",
+          "zh": "國際專班辦公室小助理"
+        },
+        "details": {
+          "en": "Coordinating communication between international students and the department office, administrative tasks. Gained precise understanding of needs, consensus facilitation, and active communication.",
+          "vi": "Hỗ trợ sinh viên quốc tế giao tiếp với văn phòng khoa, xử lý thông tin hành chính và phản hồi ý kiến kịp thời. Học được cách thấu hiểu chính xác các nhu cầu khác nhau và thúc đẩy sự đồng thuận giữa hai bên.",
+          "zh": "協助國際學生與系辦溝通、處理行政資訊並即時回饋意見。學會如何精準理解不同需求，並在雙方之間達成共識，提升了實際的溝通與協調能力。"
+        }
+      },
+      {
+        "year": "2026 - Present",
+        "role": {
+          "en": "Consumer Insights Course Teaching Assistant (TA)",
+          "vi": "Trợ giảng môn Hành vi Người tiêu dùng",
+          "zh": "《消費者洞察》課程助教 TA"
+        },
+        "details": {
+          "en": "Supported teaching material production, answered student homework questions, and documented learning pain points for the instructor. Translated complex theories into easily digestible information.",
+          "vi": "Hỗ trợ soạn tài liệu giảng dạy, giải đáp thắc mắc bài tập của sinh viên, đồng thời ghi nhận các khó khăn học tập để phản hồi cho giảng viên. Chuyển hóa lý thuyết phức tạp thành thông tin dễ hiểu.",
+          "zh": "協助教學素材製作並解答同學作業疑問，同時記錄學生的學習痛點反饋給老師。將複雜理論轉化為易懂資訊，並在細心觀察中提升了對受眾心理的理解與執行力。"
+        }
+      },
+      {
+        "year": "2026 - Present",
+        "role": {
+          "en": "Facebook Official Page Manager",
+          "vi": "Quản lý Fanpage Facebook chính thức 'Truyền Lực Thế Hệ'",
+          "zh": "「傳力世代」Facebook官方粉專管理"
+        },
+        "details": {
+          "en": "Content planning and posting. Improved copywriting and social media operations.",
+          "vi": "Lên kế hoạch nội dung và đăng bài trên trang fanpage chính thức. Giúp mài giũa năng lực viết lách và vận hành mạng xã hội qua thực chiến, học cách dùng nội dung số làm cầu nối.",
+          "zh": "粉絲專頁的內容企劃與貼文發布。透過實戰演練，精進了社群經營與文案撰寫能力，學會以數位內容作為媒介，有效縮短品牌與消費者間的溝通距離。"
+        }
+      },
+      {
+        "year": "2026 - Present",
+        "role": {
+          "en": "Communication Practice Course / USR Activity Group",
+          "vi": "Khóa thực hành Truyền thông & Nhóm hoạt động USR",
+          "zh": "傳播實務課程 / USR的活動組"
+        },
+        "details": {
+          "en": "Assisted in preparing campus forums (AMT 2026 Asia-Pacific Brand Summit VIP reception team), served as a lecturer for the USR primary school series. Gained crisis management and teamwork skills.",
+          "vi": "Hỗ trợ chuẩn bị các diễn đàn lớn trong và ngoài trường (Tổ lễ tân khách mời tại Hội nghị Thượng đỉnh Thương hiệu Châu Á - Thái Bình Dương AMT 2026), làm diễn giả chuỗi hoạt động tiểu học USR.",
+          "zh": "協助籌備校內外大型論壇（AMT 2026 亞太品牌峰會 貴賓招待組），擔任USR國小系列活動講師。累積了處理突發狀況的應變能力，並建立高效的團隊協作技巧。"
+        }
+      }
+    ],
+    "learnings": {
+      "teamwork": {
+        "title": { "en": "Teamwork & Collaboration", "vi": "Tinh thần Đồng đội", "zh": "團隊合作" },
+        "content": {
+          "en": "I believe teamwork is indispensable. Collaborating with others not only hones my communication and expression skills but also teaches me perspective-taking, allowing me to absorb nutrient from diverse viewpoints and achieve mutual growth.",
+          "vi": "Tôi tin tưởng tinh thần đồng đội là không thể thiếu. Việc cộng tác với người khác không chỉ rèn luyện kỹ năng giao tiếp và diễn đạt mà còn học cách đặt mình vào vị trí người khác, tiếp thu bài học từ nhiều góc nhìn khác nhau để cùng phát triển.",
+          "zh": "我深信團隊合作是不可或缺的，透過與他人協作，我不僅能磨練溝通反應與表達能力，更能學習換位思考，從多元觀點中汲取養分，實現共同成長。"
+        }
+      },
+      "independent": {
+        "title": { "en": "Independent Mindset", "vi": "Tư duy Độc lập", "zh": "獨立思考" },
+        "content": {
+          "en": "I possess a heart brave in exploration, never backing down from the unknown. Through critical thinking, I can clarify the essence of complex information without blindly following the crowd. I always keep my curiosity and reflect to continuously upgrade my value.",
+          "vi": "Tôi sở hữu một trái tim dũng cảm khám phá, không lùi bước trước những điều chưa biết. Nhờ tư duy phản biện tôi có thể làm rõ bản chất giữa các thông tin phức tạp mà không mù quáng theo đám đông. Tôi luôn giữ sự tò mò và tự phản tỉnh để sửa đổi và nâng tầm giá trị bản thân.",
+          "zh": "我擁有一顆勇於探索的心，面對未知從不退縮，透過批判性思考我能在複雜的資訊中釐清本質不盲目從眾。我始終保有好奇心，並透過不斷的自我覺察來修正與提升自我價值的深度。"
+        }
+      }
+    }
+  }
 }

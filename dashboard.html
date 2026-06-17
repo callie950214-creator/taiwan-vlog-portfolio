@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CMS Dashboard - Phuong Le Portfolio</title>
+  <title>CMS Dashboard - Callie Lee Portfolio</title>
   
   <!-- CSS Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
@@ -14,11 +14,16 @@
   <header>
     <div class="container nav-wrapper">
       <a href="index.html" class="logo">
-        PHUONG LE <span>.CMS</span>
+        CALLIE LEE <span>.CMS</span>
       </a>
-      <ul class="nav-links">
-        <li><a href="index.html" style="color: var(--primary-color); font-weight: 700;">👁️ View Public Website</a></li>
-      </ul>
+      <div style="display: flex; align-items: center; gap: 16px;">
+        <select id="lang-select-db" class="lang-select-btn" title="Select Editing Language" style="font-size: 0.8rem; padding: 8px 12px; border-color: var(--primary-color); color: var(--primary-color);">
+          <option value="en">English (EN)</option>
+          <option value="vi">Tiếng Việt (VI)</option>
+          <option value="zh">繁體中文 (ZH)</option>
+        </select>
+        <a href="index.html" style="color: var(--primary-color); font-weight: 700;">👁️ View Public Website</a>
+      </div>
     </div>
   </header>
 
@@ -27,101 +32,72 @@
     <div class="db-header">
       <div class="db-title">
         <h1>Content Management System ⚙️</h1>
-        <p style="color: var(--text-light); margin-top: 4px;">Update your bio, edit your digital CV, and post new daily work/life videos.</p>
+        <p style="color: var(--text-light); margin-top: 4px;">Update your biography, manage work case studies, and upload waitress photos in English, Vietnamese, or Chinese.</p>
       </div>
     </div>
 
     <div class="db-grid">
       
-      <!-- Left Column: Edit Profile Details -->
+      <!-- Left Column: Edit Profile & General Info -->
       <div>
+        <!-- Edit Profile Details -->
         <div class="db-card">
-          <h2>Edit Profile & CV Info</h2>
+          <h2>Edit Profile Info</h2>
           <form id="profile-form">
             <div class="form-group">
-              <label for="prof-name">Full Name</label>
-              <input type="text" id="prof-name" class="form-control" required placeholder="Phuong Le">
+              <label for="prof-name">Full Name (Global)</label>
+              <input type="text" id="prof-name" class="form-control" required placeholder="Callie Lee">
             </div>
             
             <div class="form-group">
-              <label for="prof-role">Target Job Role</label>
-              <input type="text" id="prof-role" class="form-control" required placeholder="Marketing Intern / Content Producer">
+              <label for="prof-role">Target Job Role <span class="db-lang-badge" style="font-size: 0.75rem; color: var(--primary-color); font-weight: 700;">(Selected Language)</span></label>
+              <input type="text" id="prof-role" class="form-control" required placeholder="Advertising & Strategic Marketing">
             </div>
 
             <div class="form-group">
-              <label for="prof-location">Location</label>
+              <label for="prof-location">Location <span class="db-lang-badge" style="font-size: 0.75rem; color: var(--primary-color); font-weight: 700;">(Selected Language)</span></label>
               <input type="text" id="prof-location" class="form-control" required placeholder="Taipei, Taiwan">
             </div>
 
             <div class="form-group">
-              <label for="prof-university">University</label>
-              <input type="text" id="prof-university" class="form-control" required placeholder="National Taiwan University">
+              <label for="prof-university">University <span class="db-lang-badge" style="font-size: 0.75rem; color: var(--primary-color); font-weight: 700;">(Selected Language)</span></label>
+              <input type="text" id="prof-university" class="form-control" required placeholder="Ming Chuan University">
             </div>
 
             <div class="form-group">
-              <label for="prof-major">Major</label>
-              <input type="text" id="prof-major" class="form-control" required placeholder="International Business">
+              <label for="prof-major">Major <span class="db-lang-badge" style="font-size: 0.75rem; color: var(--primary-color); font-weight: 700;">(Selected Language)</span></label>
+              <input type="text" id="prof-major" class="form-control" required placeholder="Advertising & Strategic Marketing">
             </div>
 
             <div class="form-group">
-              <label for="prof-email">Email Address</label>
-              <input type="email" id="prof-email" class="form-control" required placeholder="phuongle.tw@gmail.com">
-            </div>
-
-            <div class="form-group">
-              <label for="prof-instagram">Instagram Handle</label>
+              <label for="prof-instagram">Instagram Handle (Global)</label>
               <input type="text" id="prof-instagram" class="form-control" required placeholder="phuongle439">
             </div>
 
             <div class="form-group">
-              <label for="prof-avatar">Profile Avatar Image Path <span style="font-weight:normal;color:var(--text-light)">(e.g., <code>images/profile.jpg</code>)</span></label>
+              <label for="prof-avatar">Profile Avatar Image Path (Global)</label>
               <input type="text" id="prof-avatar" class="form-control" placeholder="images/profile.jpg">
             </div>
 
             <div class="form-group">
-              <label for="prof-bio">Short Biography</label>
-              <textarea id="prof-bio" class="form-control" rows="5" required placeholder="Describe your student life in Taiwan and your positive goals..."></textarea>
+              <label for="prof-bio">Biography Summary <span class="db-lang-badge" style="font-size: 0.75rem; color: var(--primary-color); font-weight: 700;">(Selected Language)</span></label>
+              <textarea id="prof-bio" class="form-control" rows="5" required placeholder="Describe your background..."></textarea>
             </div>
 
             <button type="submit" class="btn btn-primary" style="width: 100%;">💾 Save Profile Details</button>
           </form>
         </div>
 
-        <!-- Edit Internship Log Card -->
-        <div class="db-card">
-          <h2>Edit July Internship Log 📅</h2>
-          <form id="timeline-form">
-            <div class="form-group">
-              <label for="log-day-select">Select Day</label>
-              <select id="log-day-select" class="form-control">
-                <!-- Populated dynamically via JS -->
-              </select>
-            </div>
-
-            <div class="form-group">
-              <label for="log-day-title">Day Title</label>
-              <input type="text" id="log-day-title" class="form-control" required placeholder="Orientation & Onboarding">
-            </div>
-
-            <div class="form-group">
-              <label for="log-day-desc">Day Accomplishments / Description</label>
-              <textarea id="log-day-desc" class="form-control" rows="4" required placeholder="Describe what you did on this day..."></textarea>
-            </div>
-
-            <button type="submit" class="btn btn-primary" style="width: 100%;">💾 Save Day Log</button>
-          </form>
-        </div>
-
-        <!-- Export & Local database storage instructions -->
-        <div class="db-card" style="background-color: rgba(82, 183, 136, 0.05);">
+        <!-- Export & Backup -->
+        <div class="db-card" style="background-color: rgba(95, 112, 97, 0.05);">
           <h2>Export & Sync Changes</h2>
           <div class="backup-box">
             <h3>How to save changes permanently:</h3>
             <p>
-              Your edits are currently saved in your web browser (locally). To make them permanent or show up if you put this website online:
+              Your edits are currently saved in your web browser (locally). To make them permanent or show up if you deploy online:
             </p>
             <ol style="margin-left: 18px; font-size: 0.85rem; color: var(--text-light); margin-bottom: 15px;">
-              <li style="margin-bottom: 6px;">Click the <strong>Export data.json</strong> button below to download your updated data file.</li>
+              <li style="margin-bottom: 6px;">Click the <strong>Export data.json</strong> button below to download your updated database file.</li>
               <li style="margin-bottom: 6px;">Drag/copy this downloaded file into your website folder: <code>taiwan-vlog-portfolio/</code></li>
               <li>Overwrite the existing <code>data.json</code> file.</li>
             </ol>
@@ -137,75 +113,46 @@
         </div>
       </div>
 
-      <!-- Right Column: Add / Edit Vlog Posts -->
+      <!-- Right Column: Edit Pillars and Waitress Album -->
       <div>
-        <!-- Vlog Post Form -->
+        <!-- Edit July Internship -->
         <div class="db-card">
-          <h2 id="vlog-form-title">Add New Vlog Post 🎥</h2>
-          <form id="vlog-form">
+          <h2>Edit July Internship Pillar 💼</h2>
+          <form id="internship-form">
             <div class="form-group">
-              <label for="vlog-title">Video / Vlog Title</label>
-              <input type="text" id="vlog-title" class="form-control" required placeholder="A Day in my Life as a Vietnamese Student in Taipei">
+              <label for="intern-desc">Overview / Description <span class="db-lang-badge" style="font-size: 0.75rem; color: var(--primary-color); font-weight: 700;">(Selected Language)</span></label>
+              <textarea id="intern-desc" class="form-control" rows="3" required placeholder="Describe your July internship achievements..."></textarea>
             </div>
-
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
-              <div class="form-group">
-                <label for="vlog-date">Post Date</label>
-                <input type="date" id="vlog-date" class="form-control" required>
-              </div>
-
-              <div class="form-group">
-                <label for="vlog-category">Category</label>
-                <select id="vlog-category" class="form-control" required>
-                  <option value="daily">Daily Life</option>
-                  <option value="study">Study & Mandarin</option>
-                  <option value="work">Work & Internship</option>
-                  <option value="travel">Taiwan Travel</option>
-                </select>
-              </div>
-            </div>
-
-            <div style="display: grid; grid-template-columns: 1fr 1.5fr; gap: 16px;">
-              <div class="form-group">
-                <label for="vlog-type">Video Host Type</label>
-                <select id="vlog-type" class="form-control" required>
-                  <option value="local">Local MP4 File</option>
-                  <option value="youtube">YouTube Link</option>
-                  <option value="instagram">Instagram Reel</option>
-                  <option value="embed">Generic Embed URL</option>
-                </select>
-              </div>
-
-              <div class="form-group">
-                <label for="vlog-url">Video File Path</label>
-                <input type="text" id="vlog-url" class="form-control" required placeholder="videos/vlog1.mp4" value="videos/vlog1.mp4">
-              </div>
-            </div>
-
             <div class="form-group">
-              <label for="vlog-cover">Cover Thumbnail Image Path <span style="font-weight:normal;color:var(--text-light)">(e.g., <code>images/cover1.jpg</code> or leave blank for default)</span></label>
-              <input type="text" id="vlog-cover" class="form-control" placeholder="images/profile.jpg">
+              <label for="intern-video">Video Presentation URL (Global)</label>
+              <input type="text" id="intern-video" class="form-control" required placeholder="https://www.youtube.com/embed/...">
             </div>
-
             <div class="form-group">
-              <label for="vlog-desc">Video Description</label>
-              <textarea id="vlog-desc" class="form-control" rows="4" required placeholder="Describe what happens in this vlog..."></textarea>
+              <label for="intern-cover">Cover Image Path (Global)</label>
+              <input type="text" id="intern-cover" class="form-control" required placeholder="images/profile.jpg">
             </div>
-
-            <div style="display: flex; gap: 12px; justify-content: flex-end;">
-              <button type="button" id="btn-cancel-edit" class="btn btn-secondary" style="display: none;">Cancel</button>
-              <button type="submit" class="btn btn-primary">Publish Vlog Post 🚀</button>
-            </div>
+            <button type="submit" class="btn btn-primary btn-sm" style="width: 100%;">💾 Save Internship Details</button>
           </form>
         </div>
 
-        <!-- List of Existing Videos -->
+        <!-- Edit Languages Pillar -->
         <div class="db-card">
-          <h2>Manage Your Videos</h2>
-          <div class="db-vlog-list" id="db-vlog-list">
-            <!-- Rendered dynamically via dashboard.js -->
-            <p style="text-align: center; color: var(--text-light);">Loading videos list...</p>
-          </div>
+          <h2>Edit Language Learning Pillar 🗣️</h2>
+          <form id="languages-form">
+            <div class="form-group">
+              <label for="lang-desc">Overview / Description <span class="db-lang-badge" style="font-size: 0.75rem; color: var(--primary-color); font-weight: 700;">(Selected Language)</span></label>
+              <textarea id="lang-desc" class="form-control" rows="3" required placeholder="Describe your language capabilities..."></textarea>
+            </div>
+            <div class="form-group">
+              <label for="lang-video">Bilingual Presentation Video URL (Global)</label>
+              <input type="text" id="lang-video" class="form-control" required placeholder="https://www.youtube.com/embed/...">
+            </div>
+            <div class="form-group">
+              <label for="lang-cover">Cover Image Path (Global)</label>
+              <input type="text" id="lang-cover" class="form-control" required placeholder="images/profile.jpg">
+            </div>
+            <button type="submit" class="btn btn-primary btn-sm" style="width: 100%;">💾 Save Language Details</button>
+          </form>
         </div>
 
         <!-- Manage Waitress Album -->
@@ -217,17 +164,17 @@
             <h3 style="font-size:1.1rem; margin-bottom:15px; color:var(--primary-color);">Add Photo to Album</h3>
             
             <div class="form-group">
-              <label for="album-title">Photo Title / Caption</label>
-              <input type="text" id="album-title" class="form-control" required placeholder="Serving with a Smile | Ca làm việc vui vẻ">
+              <label for="album-title">Photo Title / Caption <span class="db-lang-badge" style="font-size: 0.75rem; color: var(--primary-color); font-weight: 700;">(Selected Language)</span></label>
+              <input type="text" id="album-title" class="form-control" required placeholder="Serving with a Smile">
             </div>
 
             <div class="form-group">
-              <label for="album-image">Photo File Path <span style="font-weight:normal;color:var(--text-light)">(e.g., <code>images/waitress/photo.jpg</code>)</span></label>
-              <input type="text" id="album-image" class="form-control" required placeholder="images/waitress/S__62742535.jpg">
+              <label for="album-image">Photo File Path (Global)</label>
+              <input type="text" id="album-image" class="form-control" required placeholder="images/waitress/photo.jpg">
             </div>
 
             <div class="form-group">
-              <label for="album-desc">Photo Description</label>
+              <label for="album-desc">Photo Description <span class="db-lang-badge" style="font-size: 0.75rem; color: var(--primary-color); font-weight: 700;">(Selected Language)</span></label>
               <textarea id="album-desc" class="form-control" rows="3" required placeholder="Describe what you are doing in this photo..."></textarea>
             </div>
 
@@ -235,9 +182,9 @@
           </form>
 
           <!-- List of Album Photos -->
-          <h3 style="font-size:1.1rem; margin-bottom:15px; color:var(--primary-color);">Current Album Photos</h3>
+          <h3 style="font-size:1.1rem; margin-bottom:15px; color:var(--primary-color);">Current Album Photos <span class="db-lang-badge" style="font-size: 0.75rem; color: var(--primary-color); font-weight: 700;">(Selected Language)</span></h3>
           <div class="db-album-list" id="db-album-list">
-            <!-- Rendered dynamically via dashboard.js -->
+            <!-- Rendered dynamically -->
             <p style="text-align: center; color: var(--text-light);">Loading album photos...</p>
           </div>
         </div>
@@ -249,7 +196,7 @@
   <!-- Footer Section -->
   <footer style="margin-top: 80px; background-color: #111B15; color: #9BB1A5; padding: 40px 0; text-align: center; font-size: 0.85rem; border-top: 1px solid #21352A;">
     <div class="container">
-      <p>&copy; 2026 Phuong Le. Content Management System Dashboard. Spreading positivity 🌿</p>
+      <p>&copy; 2026 Callie Lee. Content Management System Dashboard. Spreading positivity 🌿</p>
       <p style="margin-top: 8px;"><a href="index.html" style="color: var(--primary-light);">← Back to View Main Website</a></p>
     </div>
   </footer>

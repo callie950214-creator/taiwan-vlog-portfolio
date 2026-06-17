@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Life in Taiwan - Vlog Portfolio & CV | Du học sinh Đài Loan</title>
-  <meta name="description" content="Bilingual portfolio website documenting the study, work, and internship life of a Vietnamese student in Taiwan. / Trang web song ngữ chia sẻ cuộc sống học tập và thực tập tại Đài Loan.">
+  <title>Callie Lee | Professional Portfolio - MCU Advertising & Marketing</title>
+  <meta name="description" content="Career portfolio of Callie Lee, majoring in Advertising & Strategic Marketing at Ming Chuan University. Featuring key case studies, language skills, and waitress experience.">
   
   <!-- CSS Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
@@ -15,16 +15,25 @@
   <header>
     <div class="container nav-wrapper">
       <a href="index.html" class="logo">
-        STUDENT LIFE <span>.TW</span>
+        CALLIE LEE <span>.PORTFOLIO</span>
       </a>
       <ul class="nav-links">
-        <li><a href="#about">About / Giới thiệu</a></li>
-        <li><a href="#timeline">Internship / Thực tập</a></li>
-        <li><a href="#vlogs">Vlogs & Videos</a></li>
-        <li><a href="#album">Waitress Diaries / Làm thêm</a></li>
-        <li><a href="#career">Career / CV</a></li>
+        <li><a href="#about" data-i18n="navAbout">About</a></li>
+        <li><a href="#internship" data-i18n="navInternship">Internship</a></li>
+        <li><a href="#languages" data-i18n="navLanguages">Languages</a></li>
+        <li><a href="#university" data-i18n="navUniversity">University Life</a></li>
+        <li><a href="#waitress" data-i18n="navWaitress">Waitress</a></li>
+        <li><a href="#career" data-i18n="navResume">Resume</a></li>
+        <li><a href="#contact" data-i18n="navContact">Contact</a></li>
       </ul>
-      <button id="theme-toggle" class="theme-toggle-btn" title="Toggle theme">🌙</button>
+      <div style="display: flex; align-items: center; gap: 12px;">
+        <select id="lang-select" class="lang-select-btn" title="Select Language">
+          <option value="en">EN</option>
+          <option value="vi">VI</option>
+          <option value="zh">繁中</option>
+        </select>
+        <button id="theme-toggle" class="theme-toggle-btn" title="Toggle theme" style="position:static;">🌙</button>
+      </div>
     </div>
   </header>
 
@@ -33,168 +42,180 @@
     <div class="container hero-grid">
       <div class="hero-content">
         <div class="hero-badge">
-          <span>🇹🇼</span> Study, Work & Life in Taiwan | Học tập, Làm việc & Cuộc sống Đài Loan
+          <span>💼</span> <span data-i18n="heroBadge">Ming Chuan University | Advertising & Strategic Marketing</span>
         </div>
-        <h1>Hi, I'm <span id="profile-name">Student</span> 👋</h1>
+        <h1>Hi, I'm <span id="profile-name">Callie Lee</span> 👋</h1>
         <h3 style="font-size: 1.35rem; margin-bottom: 20px; color: var(--primary-color);" id="profile-role">
-          Marketing Specialist & Content Creator | Chuyên viên Marketing & Sáng tạo nội dung
+          Advertising & Strategic Marketing
         </h3>
         <p class="hero-bio" id="profile-bio" style="font-size: 1.05rem; line-height: 1.7;">
-          Loading biography details / Đang tải thông tin giới thiệu...
+          Loading bio...
         </p>
         <div class="hero-actions" style="margin-top: 30px;">
-          <a href="#vlogs" class="btn btn-primary">Watch Vlogs / Xem Vlog 🎥</a>
-          <a href="#career" class="btn btn-secondary">View CV / Xem Hồ sơ 📄</a>
+          <a href="#internship" class="btn btn-primary" data-i18n="viewWorks">View Works 💼</a>
+          <a href="#career" class="btn btn-secondary" data-i18n="viewResume">View Resume 📄</a>
         </div>
       </div>
       <div class="hero-visual">
         <div class="avatar-wrapper">
-          <img id="avatar" src="images/profile.jpg" alt="Profile" class="avatar-image">
-        </div>
-        <div class="floating-badge fb-1">
-          <span>✨</span> Positivity | Tích cực
-        </div>
-        <div class="floating-badge fb-2">
-          <span>💼</span> July Internship | Thực tập tháng 7
+          <img id="avatar" src="images/profile.jpg" alt="Callie Lee" class="avatar-image">
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Interactive "Tháng 7 Internship" Timeline -->
-  <section id="timeline" class="section" style="background-color: rgba(45, 106, 79, 0.02);">
+  <!-- Pillar 1: July Internship (Event Organization) -->
+  <section id="internship" class="section" style="background-color: rgba(95, 112, 97, 0.03);">
     <div class="container">
-      <div class="section-title">
-        <h2>Tháng 7 Internship | July Internship</h2>
-        <p style="margin-top: 10px;">
-          Follow my 31-day journey as a project management and marketing intern in Taipei, Taiwan.<br>
-          <span style="color: var(--text-light); font-size: 0.95rem; font-style: italic;">Theo dõi hành trình 31 ngày thực tập quản lý dự án và marketing tại Đài Bắc, Đài Loan.</span>
-        </p>
+      <div class="section-title" style="margin-bottom: 40px;">
+        <h2 id="internship-pillar-title">Event Organization</h2>
       </div>
-      
-      <div class="timeline-container" id="timeline-container">
-        <!-- Rendered dynamically via app.js -->
-        <p style="text-align: center; color: var(--text-light);">Loading timeline / Đang tải nhật ký...</p>
+
+      <div style="max-width: 650px; margin: 0 auto;" id="internship-media-container">
+        <!-- Rendered dynamically -->
       </div>
     </div>
   </section>
 
-  <!-- Vlog & Video Section -->
-  <section id="vlogs" class="section">
+  <!-- Pillar 2: Language Ability -->
+  <section id="languages" class="section">
     <div class="container">
-      <div class="section-title">
-        <h2>My Daily Vlogs & Videos | Vlog Hàng Ngày & Video Công Việc</h2>
-        <p style="margin-top: 10px;">
-          I post updates about daily work, language study tips, and my Taiwanese company internship.<br>
-          <span style="color: var(--text-light); font-size: 0.95rem; font-style: italic;">Mình chia sẻ về công việc hàng ngày, mẹo học tiếng Trung và kỳ thực tập sắp tới tại doanh nghiệp Đài Loan.</span>
-        </p>
+      <div class="section-title" style="margin-bottom: 40px;">
+        <h2 id="languages-pillar-title">Language Ability</h2>
       </div>
 
-      <!-- Filter Categories -->
-      <div class="vlog-filter-bar" id="filter-bar">
-        <button class="filter-btn active" data-filter="all">All / Tất cả</button>
-        <button class="filter-btn" data-filter="daily">Daily Life / Đời sống</button>
-        <button class="filter-btn" data-filter="study">Study / Học tập</button>
-        <button class="filter-btn" data-filter="work">Work & Intern / Công việc</button>
-        <button class="filter-btn" data-filter="travel">Travel / Du lịch</button>
-      </div>
-
-      <!-- Video Card Grid -->
-      <div class="vlog-grid" id="vlog-grid">
-        <!-- Rendered dynamically via app.js -->
-        <p style="text-align: center; color: var(--text-light); grid-column: 1/-1;">Loading video posts / Đang tải danh sách video...</p>
+      <div style="max-width: 650px; margin: 0 auto;" id="languages-media-container">
+        <!-- Rendered dynamically -->
       </div>
     </div>
   </section>
 
-  <!-- Waitress Diaries Photo Album Section -->
-  <section id="album" class="section" style="background-color: var(--card-bg); border-top: 1px solid var(--border-color);">
+  <!-- Pillar 3: University Life (3D Flipbook Booklet) -->
+  <section id="university" class="section" style="background-color: rgba(95, 112, 97, 0.03);">
     <div class="container">
-      <div class="section-title">
-        <h2>Waitress Diaries | Nhật Ký Làm Thêm</h2>
-        <p style="margin-top: 10px;">
-          Photos showing my daily life, teamwork, and service experiences working as a waitress in Taipei.<br>
-          <span style="color: var(--text-light); font-size: 0.95rem; font-style: italic;">Hình ảnh thực tế về cuộc sống làm việc, tinh thần đồng đội và dịch vụ khách hàng khi làm phục vụ tại Đài Bắc.</span>
-        </p>
+      <div class="section-title" style="margin-bottom: 40px;">
+        <h2 id="university-pillar-title">University Life</h2>
       </div>
 
-      <!-- Photo Album Grid -->
-      <div class="vlog-grid" id="album-grid">
-        <!-- Rendered dynamically via app.js -->
-        <p style="text-align: center; color: var(--text-light); grid-column: 1/-1;">Loading album photos / Đang tải ảnh...</p>
+      <div style="max-width: 650px; margin: 0 auto;" id="university-media-container">
+        <!-- Rendered dynamically -->
       </div>
     </div>
   </section>
 
-  <!-- Career & CV Section -->
-  <section id="career" class="section" style="background-color: rgba(45, 106, 79, 0.02); border-top: 1px solid var(--border-color);">
+  <!-- Pillar 4: Waitress Experience -->
+  <section id="waitress" class="section">
+    <div class="container">
+      <div class="section-title" style="margin-bottom: 40px;">
+        <h2 id="waitress-pillar-title">Waitress Experience</h2>
+      </div>
+
+      <!-- Center Spotlight Card Container -->
+      <div style="max-width: 650px; margin: 0 auto;" id="waitress-photos-grid">
+        <!-- Rendered dynamically -->
+      </div>
+    </div>
+  </section>
+
+  <!-- CV Section -->
+  <section id="career" class="section">
     <div class="container">
       <div class="section-title">
-        <h2>Interactive Career CV | CV Sự Nghiệp Tương Tác</h2>
-        <p style="margin-top: 10px;">
-          Combining academic business foundations with real-world content creation.<br>
-          <span style="color: var(--text-light); font-size: 0.95rem; font-style: italic;">Kết hợp nền tảng kinh doanh học thuật với kỹ năng sáng tạo nội dung thực tế.</span>
-        </p>
+        <h2 data-i18n="navResume">Resume</h2>
+        <p data-i18n="resumeSubtitle">Combining medical attention to details with modern advertising and strategic marketing.</p>
       </div>
 
       <div class="cv-wrapper">
-        <!-- Education & Achievements -->
+        <!-- Education column -->
         <div class="cv-block">
-          <h3>🎓 Education & Internships | Học vấn & Thực tập</h3>
+          <h3 data-i18n="eduTitle">🎓 Education</h3>
           
           <div class="education-item">
             <div class="edu-meta">
-              <span class="edu-date">July 2026 / Tháng 7, 2026</span>
+              <span class="edu-date">2023 - 2027</span>
             </div>
-            <h4 class="edu-title">Project Management & Operations Intern | Thực tập sinh Vận hành & Quản lý Dự án</h4>
-            <p class="edu-inst">Taiwanese Tech Corporation | Đài Bắc, Đài Loan</p>
-            <p class="edu-desc">
-              Supporting cross-border business development, coordinating marketing milestones, and facilitating communication between Vietnamese and local teams.<br>
-              <span style="font-size: 0.85rem; color: var(--text-light); display: block; margin-top: 6px;">Hỗ trợ phát triển kinh doanh xuyên biên giới, điều phối các cột mốc tiếp thị và kết nối giao tiếp giữa đội ngũ Việt Nam và đối tác Đài Loan.</span>
+            <h4 class="edu-title" data-i18n="eduMCUTitle">Bachelor of Advertising & Strategic Marketing</h4>
+            <p class="edu-inst" id="profile-university">Ming Chuan University</p>
+            <p class="edu-desc" data-i18n="eduMCUDesc">
+              Academic Standing: Ranked 1st out of 64 students. Focusing on creative copywriting, marketing strategy development, A/B testing, and digital media analytics.
             </p>
           </div>
 
           <div class="education-item">
             <div class="edu-meta">
-              <span class="edu-date">2023 - Present / 2023 - Hiện tại</span>
+              <span class="edu-date">2013 - 2016</span>
             </div>
-            <h4 class="edu-title">Bachelor of Business & International Trade | Cử nhân Kinh doanh & Thương mại Quốc tế</h4>
-            <p class="edu-inst" id="profile-university">National Taiwan University</p>
-            <p class="edu-desc">
-              Focusing on Global Supply Chain, Content Strategy, and Marketing Analytics. Actively participating in bilingual business competitions.<br>
-              <span style="font-size: 0.85rem; color: var(--text-light); display: block; margin-top: 6px;">Chuyên ngành Chuỗi cung ứng toàn cầu, Chiến lược nội dung và Phân tích tiếp thị. Tích cực tham gia các cuộc thi giải quyết tình huống kinh doanh song ngữ.</span>
-            </p>
-          </div>
-
-          <div class="education-item">
-            <div class="edu-meta">
-              <span class="edu-date">2024 - 2025</span>
-            </div>
-            <h4 class="edu-title">Part-Time Content Strategy Assistant | Trợ lý Chiến lược Nội dung Bán thời gian</h4>
-            <p class="edu-inst">Cozy Taipei Media Hub</p>
-            <p class="edu-desc">
-              Assisted in drafting script outlines, recording short videos, and managing community engagement, growing organic traffic for student campaigns by 40%.<br>
-              <span style="font-size: 0.85rem; color: var(--text-light); display: block; margin-top: 6px;">Hỗ trợ lên kịch bản chi tiết, quay video ngắn và quản lý tương tác cộng đồng học sinh, tăng trưởng 40% lượng truy cập tự nhiên cho các chiến dịch.</span>
+            <h4 class="edu-title" data-i18n="eduNursingTitle">Associate Degree in Nursing</h4>
+            <p class="edu-inst">Thai Binh Medical College (TBYMC)</p>
+            <p class="edu-desc" data-i18n="eduNursingDesc">
+              Honed response under pressure, detailed observations, empathy, and professional patient communication techniques.
             </p>
           </div>
         </div>
 
-        <!-- Skills and Strengths -->
+        <!-- Skills & Awards column -->
         <div class="cv-block">
-          <h3>⚡ Skills & Languages | Kỹ năng & Ngoại ngữ</h3>
-          <div id="skills-container">
-            <!-- Rendered dynamically via app.js -->
-            <p style="color: var(--text-light);">Loading skills portfolio / Đang tải kỹ năng...</p>
+          <h3 data-i18n="skillsTitle">⚡ Skills</h3>
+          <div id="skills-container" style="margin-bottom: 30px;">
+            <!-- Rendered dynamically -->
           </div>
           
-          <h3 style="margin-top: 40px; margin-bottom: 20px; font-size: 1.3rem;">🌱 Mindsets & Values | Tư duy & Giá trị</h3>
-          <div class="skills-badges">
-            <span class="skill-badge">Positivity First | Luôn tích cực ✨</span>
-            <span class="skill-badge">Adaptive & Resilient | Thích nghi nhanh 🌿</span>
-            <span class="skill-badge">Cross-Cultural Teamwork | Làm việc nhóm đa văn hóa 🤝</span>
-            <span class="skill-badge">Fast Learner | Học hỏi nhanh 🚀</span>
-          </div>
+          <h3 style="margin-top: 30px; margin-bottom: 20px; font-size: 1.3rem;" data-i18n="awardsTitle">🏆 Notable Awards & Honors</h3>
+          <ul class="achievements-list" style="list-style: none; padding-left: 0; line-height: 1.8; font-size: 0.95rem;">
+            <li style="margin-bottom: 10px; display: flex; align-items: flex-start; gap: 8px;">
+              <span>🥇</span>
+              <span data-i18n="awardSlogan"><strong>1st Place</strong> – 2025 Campus Creative Slogan Award, Ming Chuan University</span>
+            </li>
+            <li style="margin-bottom: 10px; display: flex; align-items: flex-start; gap: 8px;">
+              <span>🏆</span>
+              <span data-i18n="awardIMC"><strong>1st Place</strong> – Integrated Marketing Communication (IMC) Course Planning Competition</span>
+            </li>
+            <li style="margin-bottom: 10px; display: flex; align-items: flex-start; gap: 8px;">
+              <span>✨</span>
+              <span data-i18n="awardAllianz"><strong>Popularity Award</strong> – Allianz Life Creative Sales Method Competition</span>
+            </li>
+            <li style="margin-bottom: 10px; display: flex; align-items: flex-start; gap: 8px;">
+              <span>📈</span>
+              <span data-i18n="awardStandings"><strong>Academic Standings</strong> – MCU Rank 1/64 (113th Yr) & MCU Rank 2/66 (114th Yr)</span>
+            </li>
+          </ul>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section (Powered by Netlify Forms) -->
+  <section id="contact" class="section" style="background-color: rgba(95, 112, 97, 0.03); border-top: 1px solid var(--border-color);">
+    <div class="container">
+      <div class="section-title">
+        <h2 data-i18n="contactTitle">Contact Me</h2>
+        <p data-i18n="contactSubtitle">Have an opportunity or feedback? Send me a message directly and I will receive it in my inbox.</p>
+      </div>
+
+      <div style="max-width: 600px; margin: 0 auto;">
+        <!-- Netlify Form Integration -->
+        <form name="contact" method="POST" data-netlify="true" class="contact-form" style="display: flex; flex-direction: column; gap: 20px;">
+          <!-- Hidden field required for Netlify Forms to process HTML submissions -->
+          <input type="hidden" name="form-name" value="contact">
+
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+            <div class="form-group" style="display: flex; flex-direction: column; gap: 8px;">
+              <label for="contact-name" style="font-weight: 500; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em;" data-i18n="labelName">Your Name</label>
+              <input type="text" id="contact-name" name="name" required style="padding: 12px; border: 1px solid var(--border-color); background-color: var(--card-bg); color: var(--text-dark); border-radius: 0; outline: none; transition: var(--transition);">
+            </div>
+            <div class="form-group" style="display: flex; flex-direction: column; gap: 8px;">
+              <label for="contact-email" style="font-weight: 500; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em;" data-i18n="labelEmail">Your Email</label>
+              <input type="email" id="contact-email" name="email" required style="padding: 12px; border: 1px solid var(--border-color); background-color: var(--card-bg); color: var(--text-dark); border-radius: 0; outline: none; transition: var(--transition);">
+            </div>
+          </div>
+
+          <div class="form-group" style="display: flex; flex-direction: column; gap: 8px;">
+            <label for="contact-message" style="font-weight: 500; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em;" data-i18n="labelMessage">Your Message</label>
+            <textarea id="contact-message" name="message" rows="6" required style="padding: 12px; border: 1px solid var(--border-color); background-color: var(--card-bg); color: var(--text-dark); border-radius: 0; outline: none; transition: var(--transition); resize: vertical;"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="margin-top: 10px; width: 100%;" data-i18n="btnSend">📬 Send Message</button>
+        </form>
       </div>
     </div>
   </section>
@@ -202,47 +223,50 @@
   <!-- Interactive Modal Video Player Overlay -->
   <div class="modal-overlay" id="modal-overlay">
     <div class="modal-container" id="modal-container">
-      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close video player">✕</button>
-      <div class="modal-video-wrapper" id="modal-video-wrapper">
-        <!-- Embed player loaded via JS -->
-      </div>
-      <div class="modal-body">
-        <div class="modal-meta" id="modal-meta">
-          <!-- Category and dates -->
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close media player">✕</button>
+      
+      <!-- Video Player Section -->
+      <div id="modal-video-section">
+        <div class="modal-video-wrapper" id="modal-video-wrapper">
+          <!-- Embed player loaded via JS -->
         </div>
-        <h2 class="modal-title" id="modal-title">Video Title</h2>
-        <p class="modal-desc" id="modal-desc">Detailed video description goes here...</p>
+        <div class="modal-body">
+          <div class="modal-meta" id="modal-meta">
+            <!-- Category and dates -->
+          </div>
+          <h2 class="modal-title" id="modal-title">Video Title</h2>
+          <p class="modal-desc" id="modal-desc">Detailed description...</p>
+        </div>
+      </div>
+
+      <!-- Waitress Lightbox Article Section -->
+      <div id="modal-waitress-section" style="display: none;">
+        <!-- Injected via JS -->
+      </div>
+
+      <!-- University Lightbox Flipbook Section -->
+      <div id="modal-university-section" style="display: none;">
+        <!-- Injected via JS -->
       </div>
     </div>
   </div>
 
   <!-- Footer Section -->
   <footer>
-    <div class="container footer-grid">
+    <div class="container footer-grid" style="grid-template-columns: 1.5fr 1fr;">
       <div class="footer-about">
-        <h3>Taiwan Student Vlog & CV</h3>
-        <p id="footer-bio">A bilingual student life vlog and career CV portal. Documenting study, work, and growth in Taiwan.</p>
-      </div>
-      <div class="footer-links">
-        <h4>Quick Links / Liên kết nhanh</h4>
-        <ul>
-          <li><a href="#about">About / Giới thiệu</a></li>
-          <li><a href="#timeline">Internship / Nhật ký thực tập</a></li>
-          <li><a href="#vlogs">My Vlogs / Thư viện video</a></li>
-          <li><a href="#album">Waitress Diaries / Nhật ký làm thêm</a></li>
-          <li><a href="#career">Interactive Resume / Hồ sơ năng lực</a></li>
-        </ul>
+        <h3>Callie Lee | Professional Portfolio</h3>
+        <p id="footer-bio">Advertising & Strategic Marketing at Ming Chuan University. Showcasing academic excellence and project coordination in Taiwan.</p>
       </div>
       <div class="footer-contact">
-        <h4>Let's Connect / Liên kết</h4>
-        <p>📧 Email: <a href="mailto:phuongle.tw@gmail.com" id="email-link">phuongle.tw@gmail.com</a></p>
+        <h4 data-i18n="footerContact">Let's Connect</h4>
         <p>📸 Instagram: <a href="https://instagram.com/phuongle439" target="_blank" id="instagram-link">@phuongle439</a></p>
-        <p>📍 Location / Địa chỉ: <span id="profile-location">Taipei, Taiwan</span></p>
+        <p>📍 <span data-i18n="footerLocation">Location: Taipei, Taiwan</span></p>
       </div>
     </div>
     
     <div class="container footer-bottom">
-      <p>&copy; 2026. All rights reserved. Made with positivity 🌿</p>
+      <p>&copy; 2026 Callie Lee. All rights reserved. Made with positivity 🌿</p>
       <div class="social-links">
         <a href="https://instagram.com/phuongle439" target="_blank" class="social-icon">📸</a>
       </div>
